@@ -1,12 +1,10 @@
-import React, {Component} from 'react';
-import PropTypes from 'prop-types';
-import TextField from '@material-ui/core/TextField';
-
+import React, { Component } from "react";
+// import PropTypes from 'prop-types';
+import TextField from "@material-ui/core/TextField";
 
 class Ciphertext extends Component {
-
-    render() {
-        return (
+  render() {
+    return (
       <div className="right">
         <center>
           <h2>Ciphertext</h2>
@@ -15,10 +13,14 @@ class Ciphertext extends Component {
             rowsMax="10"
             margin="normal"
             placeholder="Enter ciphertext"
+            // value={this.props.value}
+            // onChange={this.props.onChange}
+            {...this.props}
           />
         </center>
-      </div>);
-    }
+      </div>
+    );
+  }
 }
 
 export default Ciphertext;

@@ -11,12 +11,10 @@ class Shift extends Component {
     };
   }
 
-  handleChange = e => {
-
+  handleChange = (e) => {
     this.setState({ shift: e.target.value });
-
-    this.props.handleChange(e.target.value);
-
+    var data = { shift: parseInt(e.target.value,10) };
+    this.props.handleChange(data);
   };
   render() {
     return (
@@ -31,7 +29,7 @@ class Shift extends Component {
             <MenuItem value={this.state.shift} disabled>
               Enter shift amount
             </MenuItem>
-            {[0, 1, 2, 3, 4, 5].map(String).map(x => (
+            {[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map(String).map(x => (
               <MenuItem key={x} value={x}>
                 {x}
               </MenuItem>
