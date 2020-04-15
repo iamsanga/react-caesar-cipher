@@ -72,6 +72,7 @@ class Main extends Component {
             onChange={this.handlePlainText}
             disabled={this.state.shift !== "" ? false : true}
           />
+          <h1>&#8652;</h1>
           <Ciphertext
             value={this.state.cipherTxt}
             onChange={this.handleCipherText}

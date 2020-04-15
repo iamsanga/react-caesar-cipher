@@ -11,18 +11,11 @@
 .child-container {
   margin: 50px;
   padding: 25px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .shift {
   margin: 50px;
-}
-
-.left {
-  width: 50%;
-  display: inline-block;
-}
-
-.right {
-  width: 50%;
-  display: inline-block;
 }
